@@ -1,0 +1,457 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bg",
+				"background-color\tproperty"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"Rou",
+				"Route"
+			],
+			[
+				"trai",
+				"trainning_area"
+			],
+			[
+				"tr",
+				"trainningArea"
+			],
+			[
+				"boot",
+				"bootstrap"
+			],
+			[
+				"mysq",
+				"mysqli"
+			],
+			[
+				"D",
+				"DBNAME"
+			],
+			[
+				"max",
+				"maxlength\tAttr"
+			],
+			[
+				"_",
+				"_GET"
+			],
+			[
+				"valida",
+				"valida_senha"
+			],
+			[
+				"value",
+				"value"
+			],
+			[
+				"vsen",
+				"vsenha1"
+			],
+			[
+				"vj",
+				"vjogador2"
+			],
+			[
+				"v",
+				"vjogador1"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"joga",
+				"jogador1"
+			],
+			[
+				"jo",
+				"jogador1"
+			],
+			[
+				"RE",
+				"resChuteP1"
+			],
+			[
+				"Va",
+				"ValidaChute"
+			],
+			[
+				"st",
+				"status"
+			],
+			[
+				"reto",
+				"retorno"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"s",
+				"style\tAttr"
+			],
+			[
+				"a",
+				"action\tAttr"
+			],
+			[
+				"Go",
+				"GoldFlightPlanner"
+			],
+			[
+				"G",
+				"GoldFlightPlanner"
+			],
+			[
+				"pi",
+				"piloto"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"header_",
+				"header_collapsed"
+			],
+			[
+				"json",
+				"json_encode"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "header.html",
+			"settings":
+			{
+				"buffer_size": 2479,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/vendor/src/classes/model/Candidate.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/vendor/src/classes/controllers/candidate_controller.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views/candidate_edit.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views/candidate_list.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views/header.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/views/fornecedores-edit.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/cadastro/consulta.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/classes/Sql.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views/header.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/notas/index.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views/trainning_area_list.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views/route_list.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/vendor/src/classes/controllers/route_controller.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/vendor/src/classes/model/Route.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/views/clientes-edit.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views/footer.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/vendor/nikic/fast-route/test/HackTypechecker/HackTypecheckerTest.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/res/lte/plugins/ckeditor/ckeditor.js.map",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/res/lte/package-lock.json",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/composer.phar",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views-cache/footer.33218d6e0c04fb4cff92bd97ba767f16.rtpl.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views-cache/footer.5903df2412782125ff00e7c8569a1237.rtpl.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views-cache/footer.ddd7b6a5f3fcb2fe2c736beb416db918.rtpl.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views-cache/header.33218d6e0c04fb4cff92bd97ba767f16.rtpl.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views-cache/header.5903df2412782125ff00e7c8569a1237.rtpl.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views-cache/header.ddd7b6a5f3fcb2fe2c736beb416db918.rtpl.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/vendor/src/classes/general/Sql.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/vendor/src/classes/controllers/trainning_area_controller.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/vendor/src/classes/general/page.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/views/trainning_area_edit.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/vendor/src/classes/model/TrainningArea.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/index.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/.htaccess",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portalgold/index.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portalgold/views/header.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portalgold/vendor/src/classes/controllers/area_treinamento_controller.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portalgold/composer.json",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portalgold/vendor/src/classes/general/page.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portalgold/vendor/src/classes/general/Model.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/index.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/sisrh/composer.json",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/sisrh/views/footer.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/sisrh/views/header.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/sisrh/vendor/src/classes/general/page.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/sisrh/vendor/rain/raintpl/library/Rain/Tpl.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/sisrh/index.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/sisrh/views/index.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/sisrh/vendor/src/classes/general/Model.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/cadastro/cliente.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/tutorial2/consulta.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/cadastro/gravar.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/cadastro/index.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/cadastro/cadastro.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/aula1/consulta.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/JogoMarlony/teste.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/JogoMarlony/Index.Php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/JogoMarlony/jogador1.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/JogoMarlony/style.css",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/JogoMarlony/verifica.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/JogoDaSenha/jogador.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/JogoDaSenha/jogo.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/exercicio/pagina.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/exercicio/pagina2.php",
+		"/Users/ricardo/Downloads/insert_b739.sql",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/Scripts Gold/fncValidaVooPorRanking_producao.sql",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/Scripts Gold/fncValidaVooPorRanking_20180423.sql",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/Scritps Gold/fncValidaVooPorRanking.sql",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/aula1/cadastro.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/aula1/gravar.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/aula1/excluir.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/tutorial2/sql.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/aula/tutorial2/cliente.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/xacars/flightdata.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/xacars/Example Scripts/flightdata.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/views/PlanoVFR.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/index.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/vendor/local/classes/Model/Aeroporto.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/vendor/local/classes/Model/Piloto.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/vendor/local/classes/DB/Sql.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/views/index.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/views/header.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/vendor/local/classes/Model/Nota.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/vendor/local/classes/Model/PlanoVFR.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/README.md",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/vendor/local/classes/Model.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/views/footer.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/vendor/local/classes/page.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/views/header2.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/GoldFlightPlanner/composer.json",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/views/clientes-list.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/vendor/local/classes/DB/Sql.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/vendor/local/classes/Model/Cliente.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/views/header_collapsed.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/controllers/clientes.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/vendor/local/classes/Model.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/vendor/local/classes/page.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/vendor/local/classes/Model/Fornecedor.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/views/header_expanded.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/vendor/autoload.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/views/header.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/vendor/local/classes/Model/User.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/construtora/views/index.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/estudo/src/App/Mvc/DB/Sql.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/estudo/index.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/estudo/src/App/Mvc/Controller/Controller.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/estudo/composer.json",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/notas/vendor/local/classes/Model.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/notas/vendor/local/classes/DB/Sql.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/notas/views/footer.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/notas/views/header.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/notas/vendor/rain/raintpl/templates/default/index.html",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/notas/.htaccess",
+		"/Applications/MAMP/bin/php/php7.0.22/conf/php.ini",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/notas/vendor/local/classes/DB/teste.php",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/notas/classes/DB/Sql.php",
+		"/Users/ricardo/Downloads/composer.phar"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1005,
+								1005
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "estacionamento.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 299.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
