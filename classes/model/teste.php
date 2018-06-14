@@ -1,6 +1,6 @@
 <?php 
 
-public class Teste{
+class Teste{
 
 	// propriedades
 	private $id;
@@ -8,19 +8,19 @@ public class Teste{
 
 
 	// Getters e Setters para acesso as propriedades da classe
-	public getId(){
+	public function getId(){
 		return $this->id;
 	}
 
-	public setId($id){
+	public function setId($id){
 		$this->id = $id;
 	}
 
-	public getDescricao(){
+	public function getDescricao(){
 		return $this->descricao;
 	}
 
-	public setDescricao($descricao){
+	public function setDescricao($descricao){
 		$this->descricao = $descricao;
 	}
 
