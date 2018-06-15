@@ -1,26 +1,25 @@
 <?php 
 
-public class Teste{
+class Teste{
 
 	// propriedades
 	private $id;
 	private $descricao;
 
-
-	// Getters e Setters para acesso as propriedades da classe
-	public getId(){
+	// Getters e /Setters para acesso as propriedades da classe
+	public function getId(){
 		return $this->id;
 	}
 
-	public setId($id){
+	public function setId($id){
 		$this->id = $id;
 	}
 
-	public getDescricao(){
+	public function getDescricao(){
 		return $this->descricao;
 	}
 
-	public setDescricao($descricao){
+	public function setDescricao($descricao){
 		$this->descricao = $descricao;
 	}
 
@@ -37,7 +36,7 @@ public class Teste{
 
 	// retorna somente 1 registro, caso não encontre pelo ID retornar um registro em branco
 	public function getbyId($id){
-		$result $this->get("id = ". $id);
+		$result = $this->get("id = ". $id);
 
 		if (count($result) > 0){
 			return $result[0];
