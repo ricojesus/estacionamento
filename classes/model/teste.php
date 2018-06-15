@@ -5,13 +5,8 @@ class Teste{
 	// propriedades
 	private $id;
 	private $descricao;
-
-<<<<<<< HEAD
-	// Getters e /Setters para acesso as propriedades da classe
-=======
-
+	
 	// Getters e Setters para acesso as propriedades da classe
->>>>>>> 6b7bc7a1617a8f8b61972e52f3a2251c2a1d694f
 	public function getId(){
 		return $this->id;
 	}
