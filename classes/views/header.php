@@ -16,7 +16,7 @@
  <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Rick Parking</a>
+    <a class="navbar-brand" href="/estacionamento/">Rick Parking</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,7 +28,7 @@
             Cadastros
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/estacionamento/classes/controllers/marca_controller.php">marca</a>
+            <a class="dropdown-item" href="/estacionamento/classes/controllers/teste_controller.php">Teste</a>
             <a class="dropdown-item" href="#">Tabela de Preços</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Marcas</a>
