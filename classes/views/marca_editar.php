@@ -26,8 +26,8 @@ if (isset($_GET["id"])){
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label>Descrição</label>
-                                <input type="text" class="form-control form-control-sm" name="txtDescricao" value="<?php echo $marca->descricao ?>">
+                                <label>Nome</label>
+                                <input type="text" class="form-control form-control-sm" name="txtnome" value="<?php echo $marca->nome ?>">
                             </div>
                         </div>               
                     </div>
@@ -46,6 +46,6 @@ if (isset($_GET["id"])){
 </section>
 
 <script type="text/javascript">
-    document.form1.txtDescricao.focus();
+    document.form1.txtNome.focus();
 </script>
 

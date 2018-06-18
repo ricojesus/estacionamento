@@ -6,18 +6,18 @@ class marca{
 
 	// propriedades
 	public $id;
-	public $descricao;
+	public $nome;
 
 	//Construtor, instanciado todas as vezes que a classe é criada
 	public function __construct($id = 0){
 		if ($id == 0) {
 			$this->id = 0;
-			$this->descricao = "";
+			$this->nome = "";
 		} else {
 			$result = $this->get("marca_id = ". $id);
 			if (count($result) > 0){
 				$this->id = $result[0]["id"];
-				$this->descricao = $result[0]["descricao"];
+				$this->nome = $result[0]["nome"];
 			}
 		}
 	}
@@ -32,13 +32,13 @@ class marca{
 		$sql = new Sql();
 
 		if ($this->id == 0){
-			$sql->query("INSERT INTO marca (descricao) values (:DESCRICAO)", array(
-				':DESCRICAO' => $this->descricao
+			$sql->query("INSERT INTO marca (nome) values (:NOME)", array(
+				':NOME' => $this->nome
 			));
 		} else {
-			$sql->query("UPDATE marca SET descricao=:DESCRICAO WHERE marca_id = :ID", array(
+			$sql->query("UPDATE marca SET nome=:NOME WHERE marca_id = :ID", array(
 				':ID' => $this->id,
-				':DESCRICAO' => $this->descricao
+				':NOME' => $this->nome
 			));
 		}		
 	}
@@ -54,13 +54,13 @@ class marca{
 	private function get($criteria = null){
 		$sql = new Sql();
 
-		$query = "SELECT marca_id as id, descricao FROM marca WHERE status=1"; //Garante trazer sempre somente os ativos
+		$query = "SELECT marca_id as id, nome FROM marca WHERE status=1"; //Garante trazer sempre somente os ativos
 
 		if (!is_null($criteria)){
 			$query .= " and " . $criteria;
 		}
 
-		$query .= " ORDER BY descricao";
+		$query .= " ORDER BY nome";
 
 		return $sql->select($query);
 	}	

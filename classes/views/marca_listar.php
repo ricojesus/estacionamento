@@ -21,7 +21,7 @@ $lista = (new marca())->list();
               <table id="tbCandidate" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Descrição</th>
+                  <th>Nome</th>
                   <th>Ação</th>
                 </tr>
                 </thead>
@@ -30,7 +30,7 @@ $lista = (new marca())->list();
                   //while ($row = $lista->fetch_assoc()) {
                   foreach ($lista as $row){
                     echo '<tr>';
-                    echo '<td>' . $row["descricao"] . '</td>';
+                    echo '<td>' . $row["nome"] . '</td>';
                     echo '<td align="center" width="30px">';
                     echo '<a href="../controllers/marca_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Editar</a>';
                     echo '</tr>';

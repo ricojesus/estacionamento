@@ -7,7 +7,7 @@ if (isset($_POST["btnGravar"])){
     $marca = new marca();
 
     $marca->id = $_POST["txtId"];
-    $marca->descricao = $_POST["txtDescricao"];
+    $marca->nome = $_POST["txtnome"];
 
     $marca->save();
 }
