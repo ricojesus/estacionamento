@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <title>Sistema de Controle de  Estacionamento</title>
-    <link rel="stylesheet" type="text/css" href="lib/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="lib/dist/css/style.css">
-    <script src="lib/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/estacionamento/lib/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/estacionamento/lib/dist/css/style.css">
+    <script src="/estacionamento/lib/dist/js/bootstrap.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
             Cadastros
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="index.php?page=teste_controller.php">Teste</a>
+            <a class="dropdown-item" href="/estacionamento/classes/controllers/teste_controller.php">Teste</a>
             <a class="dropdown-item" href="#">Tabela de Preços</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Marcas</a>
