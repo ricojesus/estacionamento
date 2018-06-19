@@ -38,7 +38,7 @@
             Administração
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Cadastro de Usuários</a>
+            <a class="dropdown-item" href="/estacionamento/classes/controllers/usuario_controller.php">Cadastro de Usuários</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Relatório de Carros no Estacionamento</a>
             <a class="dropdown-item" href="#">Relatório de locações por período</a>
