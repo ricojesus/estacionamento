@@ -2,7 +2,7 @@
 
 include_once ("../dal/Sql.php");
 
-class marca{
+class Marca{
 
 	// propriedades
 	public $id;

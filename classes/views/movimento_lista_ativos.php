@@ -3,25 +3,28 @@
     <form role="form" action="">
     <section class="content">
       <div class="row justify-content-center align-items-center">
-        <div class="col-6">
+        <div class="col-11">
           <div class="card card-primary card-outline">
             <!-- /.card-header -->
             <div class="card-header">
-              <h4 class="card-title">Lista de Teste</h4>
+              <h4 class="card-title">Veículos no Patio</h4>
             </div>
             <!-- /.card-header -->
             <!-- card-body -->             
             <div class="card-body">
-              <table id="tbCandidate" class="table table-bordered table-striped">
+              <table id="table1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Descrição</th>
+                  <th>Placa</th>
+                  <th>Marca</th>
+                  <th>Modelo</th>
+                  <th>Entrada</th>
                   <th width="30px">Ação</th>
                 </tr>
                 </thead>
                 <tbody>
                   <?php
-                  //while ($row = $lista->fetch_assoc()) {
+                  /*                  
                   foreach ($lista as $row){
                     echo '<tr>';
                     echo '<td>' . $row["descricao"] . '</td>';
@@ -29,6 +32,7 @@
                     echo '<a href="../controllers/teste_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Editar</a>';
                     echo '</tr>';
                   }
+                  */
                   ?>
                 </tbody>
               </table>
@@ -36,7 +40,7 @@
             <!-- /.card-body -->
 
             <div class="card-footer">
-              <a href="/estacionamento/classes/controllers/teste_controller.php?action=novo" class="btn btn-primary">Novo</a>
+              <a href="/estacionamento/classes/controllers/movimento_controller.php" class="btn btn-primary">Novo</a>
             </div>             
           </div>
         </div>
@@ -47,7 +51,7 @@
     <!-- Main content -->
 
 <script type="text/javascript">
-  $('#tbCandidate').DataTable( {
+  $('#table1').DataTable( {
     responsive: true
 } );
 </script>

@@ -22,7 +22,7 @@ $lista = (new marca())->list();
                 <thead>
                 <tr>
                   <th>Nome</th>
-                  <th>Ação</th>
+                  <th width="30px">Ação</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -31,7 +31,7 @@ $lista = (new marca())->list();
                   foreach ($lista as $row){
                     echo '<tr>';
                     echo '<td>' . $row["nome"] . '</td>';
-                    echo '<td align="center" width="30px">';
+                    echo '<td align="center">';
                     echo '<a href="../controllers/marca_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Editar</a>';
                     echo '</tr>';
                   }
