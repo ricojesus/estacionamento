@@ -1,13 +1,3 @@
-<?php
-include_once ("../models/teste.php");
-$teste = new Teste();
-
-if (isset($_GET["id"])){
-    $teste = new Teste($_GET["id"]);
-}
-
-?>
-
 <br>
 <section class="content">
     <div class="row justify-content-center align-items-center">

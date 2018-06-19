@@ -1,13 +1,3 @@
-<?php
-include_once ("../models/teste.php");
-$teste = new Teste();
-
-if (isset($_GET["id"])){
-    $teste = new Teste($_GET["id"]);
-}
-
-?>
-
 <br>
 <section class="content">
     <div class="row justify-content-center align-items-center">
@@ -48,6 +38,12 @@ if (isset($_GET["id"])){
                             <div class="form-group">
                                 <label>Marca</label>
                                 <select class="form-control form-control-sm" name="cboTipoVeiculo">
+                                    <option id=0>SELECIONE A MARCA</option>
+                                    <?php
+                                    foreach ($lstMarca as $marca){
+                                        echo '<option id="' . $marca["id"] . '">' . $marca["nome"] . '</option>';
+                                    }
+                                    ?>
                                 </select>                            
                             </div>
                         </div>               

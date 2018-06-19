@@ -29,10 +29,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/estacionamento/classes/controllers/teste_controller.php">Teste</a>
-            <a class="dropdown-item" href="/estacionamento/classes/controllers/marca_controller.php">Marca</a>
+            <a class="dropdown-item" href="/estacionamento/classes/controllers/marca_controller.php">Marcas</a>
             <a class="dropdown-item" href="#">Tabela de Preços</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Marcas</a>
           </div>
         </li>
         <li class="nav-item dropdown">
