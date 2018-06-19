@@ -1,9 +1,3 @@
-<?php
-include_once ("../models/teste.php");
-$lista = (new Teste())->list();
-
-
-?>
 <br>
     <!-- Main content -->
     <form role="form" action="">
