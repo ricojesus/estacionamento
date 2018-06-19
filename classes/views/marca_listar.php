@@ -13,7 +13,7 @@ $lista = (new marca())->list();
           <div class="card card-primary card-outline">
             <!-- /.card-header -->
             <div class="card-header">
-              <h4 class="card-title">Lista de marca</h4>
+              <h4 class="card-title">Lista de Marcas de Fabricantes</h4>
             </div>
             <!-- /.card-header -->
             <!-- card-body -->             

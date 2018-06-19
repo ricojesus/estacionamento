@@ -15,7 +15,7 @@ if (isset($_GET["id"])){
             <div class="card card-primary card-outline">
             <!-- /.card-header -->
             <div class="card-header">
-                <h4 class="card-title">Cadastro de marca</h4>
+                <h4 class="card-title">Cadastro de Marcas de Fabricantes</h4>
             </div>
             <!-- /.card-header -->
 
@@ -27,7 +27,7 @@ if (isset($_GET["id"])){
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nome</label>
-                                <input type="text" class="form-control form-control-sm" name="txtnome" value="<?php echo $marca->nome ?>">
+                                <input type="text" class="form-control form-control-sm" name="txtNome" value="<?php echo $marca->nome ?>">
                             </div>
                         </div>               
                     </div>
