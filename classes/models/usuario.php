@@ -5,26 +5,15 @@ include_once ("../dal/Sql.php");
 class usuario{
 
 	// propriedades
-	public $id;
+	public $id = 0;
 	public $nome;
 	public $login;
 	public $senha;
 	public $status;
 
-
-
-
 	//Construtor, instanciado todas as vezes que a classe é criada
 	public function __construct($id = 0){
-		if ($id == 0) {
-			$this->id = 0;
-			$this->nome = "";
-			$this->login = "";
-			$this->senha = "";
-			$this->status = "";
-			
-	 
-		} else {
+		if (!$id == 0) {
 			$result = $this->get("usuario_id = ". $id);
 			if (count($result) > 0){
 				$this->id = $result[0]["id"];
@@ -47,19 +36,18 @@ class usuario{
 		$sql = new Sql();
 
 		if ($this->id == 0){
-			$sql->query("INSERT INTO usuario (nome, login, senha, status) values (:NOME :LOGIN :SENHA :STATUS)", array(
+			$sql->query("INSERT INTO usuario (nome, login, senha, status) values (:NOME, :LOGIN, :SENHA, :STATUS)", array(
 				':NOME' => $this->nome,
 				':LOGIN' => $this->login,
 				':SENHA' => $this->senha,
-				':STATUS' => $this->status
+				':STATUS' => 1
 			));
 		} else {
-			$sql->query("UPDATE usuario SET nome=:NOME, login=:LOGIN, senha=:SENHA, status=:STATUS, WHERE usuario_id = :ID", array(
+			$sql->query("UPDATE usuario SET nome=:NOME, login=:LOGIN, senha=:SENHA  WHERE usuario_id = :ID", array(
 				':ID' => $this->id,
 				':NOME' => $this->nome,
 				':LOGIN' => $this->login,
-				':SENHA' => $this->senha,
-				':STATUS' => $this->status
+				':SENHA' => $this->senha
 			));
 		}		
 	}
