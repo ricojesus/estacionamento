@@ -51,15 +51,15 @@ class usuario{
 				':NOME' => $this->nome,
 				':LOGIN' => $this->login,
 				':SENHA' => $this->senha,
-				':STATUS' => $this->status,
+				':STATUS' => $this->status
 			));
 		} else {
-			$sql->query("UPDATE usuario SET nome=:NOME,"." login=:LOGIN, senha=:SENHA, status=:STATUS, WHERE usuario_id = :ID", array(
+			$sql->query("UPDATE usuario SET nome=:NOME, login=:LOGIN, senha=:SENHA, status=:STATUS, WHERE usuario_id = :ID", array(
 				':ID' => $this->id,
 				':NOME' => $this->nome,
 				':LOGIN' => $this->login,
 				':SENHA' => $this->senha,
-				':STATUS' => $this->status,
+				':STATUS' => $this->status
 			));
 		}		
 	}
@@ -75,7 +75,7 @@ class usuario{
 	private function get($criteria = null){
 		$sql = new Sql();
 
-		$query = "SELECT usuario_id as id, nome FROM usuario WHERE status=1"; //Garante trazer sempre somente os ativos
+		$query = "SELECT usuario_id as id, nome, login, senha, status FROM usuario WHERE status=1"; //Garante trazer sempre somente os ativos
 
 		if (!is_null($criteria)){
 			$query .= " and " . $criteria;
