@@ -10,7 +10,8 @@ if (isset($_POST["btnGravar"])){
     $usuario->nome = $_POST["txtNome"];
     $usuario->login = $_POST["txtLogin"];
     $usuario->senha = $_POST["txtSenha"];
-
+    $passwordEncriptada = md5($usuario->senha); //encript a senha com sistema md5 antes de salvar no banco de dados
+    $usuario->senha = $passwordEncriptada; // pega de volta para a classe de usuario a senha ja encriptada
     $usuario->save();
 }
 
@@ -29,8 +30,8 @@ if (isset($_GET["action"])){
         include_once ("../views/usuario_listar.php");
     }
 } else {
-    $lista[] = ""; // Remover depois de criar a classe usuario
-    //$lista = (new usuario())->list();
+    //$lista[] = ""; // Remover depois de criar a classe usuario
+    $lista = (new usuario())->list();
     include_once ("../views/usuario_listar.php"); 
 }
 
