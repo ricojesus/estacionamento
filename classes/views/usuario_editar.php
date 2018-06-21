@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="card-footer">
-                <button type="submit" name="btnGravar" class="btn btn-sm btn-primary">Gravar</button>
+                <button type="submit" name="btnGravar" class="btn btn-sm btn-primary" onclick="return validaSenha()">Gravar</button>
                 <a href="/estacionamento/classes/controllers/usuario_controller.php" class="btn btn-outline-secondary btn-sm">Voltar</a>
                 </div>            
             </form>
@@ -63,5 +63,20 @@
 
 <script type="text/javascript">
     document.form1.txtDescricao.focus();
+
+    function validaSenha(){
+        if (form1.txtSenha.value == ""){
+			alert('A senha deve ser preenchida');
+			form1.txtSenha.focus();
+			return false;            
+        }
+
+        if (form1.txtConfSenha.value == ""){
+			alert('A confirmação da senha deve ser preenchida');
+			form1.txtSenha.focus();
+			return false;            
+        }
+
+    }
 </script>
 
