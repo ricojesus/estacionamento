@@ -70,9 +70,27 @@
 			form1.txtSenha.focus();
 			return false;            
         }
+        if (form1.txtLogin.value == ""){
+			alert('o nome de login deve ser preenchido');
+			form1.txtSenha.focus();
+			return false; 
+                       
+        }
+        if (form1.txtNome.value == ""){
+			alert('O compo nome deve ser preenxido');
+			form1.txtSenha.focus();
+			return false; 
+                       
+        }
 
         if (form1.txtConfSenha.value == ""){
 			alert('A confirmação da senha deve ser preenchida');
+			form1.txtSenha.focus();
+			return false;            
+        }
+        
+        if (form1.txtConfSenha.value !== form1.txtSenha.value){
+			alert('As senhas não sao comrresponden cheque se a senha e confirmação de senhas estao iguais');
 			form1.txtSenha.focus();
 			return false;            
         }
