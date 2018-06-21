@@ -14,54 +14,7 @@ if (isset($_POST["btnGravar"])){
     $usuario->senha = $passwordEncriptada; // pega de volta para a classe de usuario a senha ja encriptada
     // verifica se os dados estao corretos antes de salvar no banco de dados o cadastro do usuarior
 
-  ?>
-  <script>
-function valida(){
-
-var vsenha = $_POST["txtSenha"];
-
-var i;
-var j;
-
-if (vsenha == ""){
-    alert('Nome do Jogador 1 deve ser preenchido');
-    return false;
-}
-
-}
-
-if (vsenha.length != 8){
-    alert('A Senha do Jogador 1 deve conter 8 digitos');
-    return false;
-}
-
-}
-
-if (!valida_senha(vsenha)){
-    alert('A Senha do Jogador 1 contém digitos repeditos');
-    form1.senha.focus();
-    return false;			
-    
-
-}
-
-function valida_senha(vsenha){
-for (i = 0; i < 3; i++){
-    for (j = i+1; j < 4; j++){
-        if (vsenha.substring(i, i+1) == vsenha.substring(j, j+1)){
-            return false;				
-        }
-    }
-}
-
-return true;		
-}
-
-}
-
-</script>
-
-  <<?php 
+  
     $usuario->save();
 }
 
