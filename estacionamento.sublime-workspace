@@ -144,12 +144,45 @@
 	"buffers":
 	[
 		{
+			"contents": " <!DOCTYPE html>\n <html>\n <head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n   <title>Sistema de Controle de  Estacionamento</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"lib/dist/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"lib/dist/css/style.css\">\n    <script src=\"lib/dist/js/bootstrap.min.js\"></script>\n\n    <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\n </head>\n <body>\n\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n    <a class=\"navbar-brand\" href=\"#\">Rick Parking</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n      <ul class=\"navbar-nav mr-auto\">\n        <li class=\"nav-item dropdown\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n            Cadastros\n          </a>\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n            <a class=\"dropdown-item\" href=\"#\">Tabela de Preços</a>\n            <div class=\"dropdown-divider\"></div>\n            <a class=\"dropdown-item\" href=\"#\">Marcas</a>\n          </div>\n        </li>\n        <li class=\"nav-item dropdown\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n            Administração\n          </a>\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n            <a class=\"dropdown-item\" href=\"#\">Relatório de Carros no Estacionamento</a>\n            <a class=\"dropdown-item\" href=\"#\">Relatório de locações por período</a>\n            <div class=\"dropdown-divider\"></div>\n            <a class=\"dropdown-item\" href=\"#\">Relatório Financeiro</a>\n          </div>\n        </li>\n      </ul>\n    </div>\n  </nav>\n\n  <br>\n  <br>\n  <br>\n  <br>\n  <br>\n\n  <div class=\"container\">\n    <div class=\"row justify-content-center align-items-center\">\n      <div class=\"col-sm-3\">\n        <a href=\"modules/op/manutencao.php\">\n        <div class=\"card text-center\">\n          <div class=\"card-body btn btn-dark\">\n            <p class=\"card-text\">Entrada de Veículos</p>\n          </div>\n        </div>\n        </a>\n      </div>\n      <div class=\"col-sm-3\">\n        <a href=\"modules/op/manutencao.php\">\n        <div class=\"card text-center\">\n          <div class=\"card-body btn btn-dark\">\n            <p class=\"card-text\">Saída de Veículos</p>\n          </div>\n        </div>\n        </a>\n      </div>\n    </div>\n  </div>\n\n\n  <footer class=\"container-fluid\">\n    <nav class=\"navbar fixed-bottom\">\n    <strong>Copyright &copy; Jedais 2018 :)</strong>\n    <div class=\"float-right d-none d-sm-inline-block\">\n      <b>Version</b> 0.0.1-alpha\n    </div>\n  </nav>\n  </footer>\n\n </body>\n </html>\n",
 			"file": "header.html",
+			"file_size": 3652,
+			"file_write_time": 131734142638814487,
 			"settings":
 			{
-				"buffer_size": 2479,
-				"encoding": "UTF-8",
+				"buffer_size": 3640,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "classes/dal/Sql.php",
+			"settings":
+			{
+				"buffer_size": 1441,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php \n\nclass Teste{\n\n\t// propriedades\n\tprivate $id;\n\tprivate $descricao;\n\t\n\t// Getters e Setters para acesso as propriedades da classe\n\tpublic function getId(){\n\t\treturn $this->id;\n\t}\n\n\tpublic function setId($id){\n\t\t$this->id = $id;\n\t}\n\n\tpublic function getDescricao(){\n\t\treturn $this->descricao;\n\t}\n\n\tpublic function setDescricao($descricao){\n\t\t$this->descricao = $descricao;\n\t}\n\n\t//Construtor, instanciado todas as vezes que a classe é criada\n\tpublic function __construct(){\n\t\t$this->setId(0);\n\t\t$this->setDescricao(null);\n\t}\n\n\t// Retornar todos os registros cadastrados, serve para carregar a tela de consulta\n\tpublic function listAll(){\n\t\treturn $this->get();\n\t}\n\n\t// retorna somente 1 registro, caso não encontre pelo ID retornar um registro em branco\n\tpublic function getbyId($id){\n\t\t$result = $this->get(\"id = \". $id);\n\n\t\tif (count($result) > 0){\n\t\t\treturn $result[0];\n\t\t}else{\n\t\t\treturn new Teste();\n\t\t}\t\t\n\t}\n\n\t//Grava os dados enviados pelo controlador\n\tpublic function save(){\n\n\t}\n\n\t// Exclui logicamente o registro\n\tpublic function delete(){\n\t\t$sql = new Sql();\n\n\t\t$sql->query(\"UPDATE teste SET status=2 WHERE id = \" . $this->id);\n\t}\n\n\t// metodo interno serve para montar todas as consultas de acesso aos dados de teste\n\tprivate function get($criteria = null){\n\t\t$sql = new Sql();\n\n\t\t$query = \"SELECT id, descricao FROM teste WHERE status=1\"; //Garante trazer sempre somente os ativos\n\n\t\tif (!is_null($criteria)){\n\t\t\t$query .= \" and \" . $criteria;\n\t\t}\n\n\t\t$query .= \" ORDER BY descricao\";\n\n\t\treturn $sql->select($query);\n\t}\t\n}\n\n ?>",
+			"file": "classes/model/teste.php",
+			"file_size": 1544,
+			"file_write_time": 131734962754011096,
+			"settings":
+			{
+				"buffer_size": 1542,
+				"line_ending": "Unix",
+				"name": "o"
+			}
+		},
+		{
+			"file": "lib/dist/css/style.css",
+			"settings":
+			{
+				"buffer_size": 113,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "footer {"
 			}
 		}
 	],
@@ -183,6 +216,13 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/estacionamento",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/estacionamento/classes",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/estacionamento/classes/dal",
+		"/Users/ricardo/Documents/Projetos/ricardo-jesus/estacionamento/lib"
+	],
 	"file_history":
 	[
 		"/Users/ricardo/Documents/Projetos/ricardo-jesus/portal/vendor/src/classes/model/Candidate.php",
@@ -335,7 +375,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -344,15 +384,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2479,
+						"buffer_size": 3640,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1005,
-								1005
+								2692,
+								2692
 							]
 						],
 						"settings":
@@ -363,10 +403,97 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 931.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "classes/dal/Sql.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "classes/model/teste.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "o",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/dist/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"auto_name": "footer {",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
