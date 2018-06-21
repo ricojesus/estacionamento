@@ -16,7 +16,7 @@ class Preco {
 			$this->tempo = "";
 			$this->valor = "";
 		} else {
-			$result = $this->get("teste_id = ". $id);
+			$result = $this->get("preco_id = ". $id);
 			if (count($result) > 0){
 				$this->id = $result[0]["id"];
 				$this->tempo = $result[0]["tempo"];
@@ -26,9 +26,9 @@ class Preco {
 	}
 
 	// Retornar todos os registros cadastrados, serve para carregar a tela de consulta
-	//public function list(){
-	//	return $this->get();
-	//}
+	public function list(){
+		return $this->get();
+	}
 
 
 }
