@@ -31,4 +31,19 @@ class Preco {
 	}
 
 
+	// metodo interno serve para montar todas as consultas de acesso aos dados de teste
+	private function get($criteria = null){
+		$sql = new Sql();
+
+		$query = "SELECT preco_id as id, minutos FROM preco WHERE status=1"; //Garante trazer sempre somente os ativos
+
+		if (!is_null($criteria)){
+			$query .= " and " . $criteria;
+		}
+
+		$query .= " ORDER BY minutos";
+
+		return $sql->select($query);
+	}	
+
 }

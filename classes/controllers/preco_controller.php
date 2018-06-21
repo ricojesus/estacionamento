@@ -25,13 +25,13 @@ if (isset($_GET["action"])){
     }
 
     if ($_GET["action"] == "novo"){
-        include_once ("../views/teste_editar.php");
+        include_once ("../views/preco_editar.php");
     } elseif($_GET["action"] == "editar") {
-        include_once ("../views/teste_editar.php");
+        include_once ("../views/preco_editar.php");
     }
 } else {
     $lista = (new Preco())->list();
-    include_once ("../views/teste_listar.php"); 
+    include_once ("../views/preco_listar.php"); 
 }
 
 
