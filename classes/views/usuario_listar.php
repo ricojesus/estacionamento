@@ -22,7 +22,7 @@
                 </thead>
                 <tbody>
                   <?php
-                  /*                  
+                                  
                   foreach ($lista as $row){
                     echo '<tr>';
                     echo '<td>' . $row["nome"] . '</td>';
@@ -31,7 +31,7 @@
                     echo '<a href="../controllers/usuario_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Editar</a>';
                     echo '</tr>';
                   }
-                  */
+                  
                   ?>
                 </tbody>
               </table>
