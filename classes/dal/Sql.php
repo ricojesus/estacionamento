@@ -3,8 +3,8 @@
 class Sql {
 
 	const HOSTNAME = "localhost";
-	const USERNAME = "aula";
-	const PASSWORD = "1234";
+	const USERNAME = "parking_user";
+	const PASSWORD = "parking_user";
 	const DBNAME = "parking";
 
 	private $conn;
