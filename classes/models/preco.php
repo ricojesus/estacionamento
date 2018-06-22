@@ -42,7 +42,8 @@ class Preco {
 		} else {
 			$sql->query("UPDATE preco SET minutos=:TEMPO WHERE preco_id = :ID", array(
 				':ID' => $this->id,
-				':TEMPO' => $this->tempo
+				':TEMPO' => $this->tempo,
+				':VALOR' => $this->valor
 			));
 		}		
 	}
@@ -59,14 +60,15 @@ class Preco {
 	private function get($criteria = null){
 		$sql = new Sql();
 
-		$query = "SELECT preco_id as id, minutos FROM preco WHERE status=1"; //Garante trazer sempre somente os ativos
+		$query = "SELECT preco_id as id, minutos FROM preco WHERE 1=1"; //Garante trazer sempre somente os ativos
 
 		if (!is_null($criteria)){
 			$query .= " and " . $criteria;
 		}
 
 		$query .= " ORDER BY minutos";
-
+		
+		
 		return $sql->select($query);
 	}	
 

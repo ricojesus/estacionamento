@@ -10,7 +10,7 @@
             <!-- /.card-header -->
 
             <!-- form start -->
-            <form name="form1" role="form" method="POST" action="../controllers/teste_controller.php">
+            <form name="form1" role="form" method="POST" action="../controllers/preco_controller.php">
                 <input type="hidden" name="txtId" value="<?php echo $preco->id ?>">
                 <div class="card-body">
                     <div class="row">

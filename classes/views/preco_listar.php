@@ -32,7 +32,8 @@ $lista = (new Preco())->list();
                   //while ($row = $lista->fetch_assoc()) {
                   foreach ($lista as $row){
                     echo '<tr>';
-                    echo '<td>' . $row["descricao"] . '</td>';
+                    echo '<td>' . $row["minutos"] . '</td>';
+                    echo '<td>' . $row["valor"] . '</td>';
                     echo '<td align="center" >';
                     echo '<a href="../controllers/preco_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Editar</a>';
                     echo '</tr>';
