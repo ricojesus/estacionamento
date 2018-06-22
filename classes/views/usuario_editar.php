@@ -17,7 +17,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nome</label>
-                                <input type="text" class="form-control form-control-sm" name="txtNome" value="<?php echo $usuario->nome; ?>">
+                                <input type="text" class="form-control form-control-sm" name="txtNome" value="<?php  ?>">
                             </div>
                         </div>               
                     </div>
