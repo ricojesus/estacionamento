@@ -40,8 +40,8 @@ CREATE TABLE IF NOT EXISTS `parking`.`movimento` (
   `movimento_id` INT NOT NULL AUTO_INCREMENT,
   `placa` VARCHAR(8) NOT NULL,
   `entrada` DATETIME NOT NULL,
-  `saida` DATETIME NOT NULL,
-  `valor` DOUBLE NOT NULL,
+  `saida` DATETIME NULL,
+  `valor` DOUBLE NULL,
   `status` SMALLINT(1) NOT NULL DEFAULT 1,
   PRIMARY KEY (`movimento_id`))
 ENGINE = InnoDB;
