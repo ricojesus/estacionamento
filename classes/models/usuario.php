@@ -2,7 +2,7 @@
 
 include_once ("../dal/Sql.php");
 
-class usuario{
+class Usuario{
 
 	// propriedades
 	public $id = 0;

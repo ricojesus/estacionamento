@@ -4,7 +4,7 @@ include_once ("../models/usuario.php");
 
 //Somente entrará nesse if quando retornando da tela de edição
 if (isset($_POST["btnGravar"])){
-    $usuario = new usuario();
+    $usuario = new Usuario();
 
     $usuario->id = $_POST["txtId"];
     $usuario->nome = $_POST["txtNome"];
@@ -20,21 +20,15 @@ if (isset($_POST["btnGravar"])){
 
 //Roteia para a tela correta
 if (isset($_GET["action"])){
-
-    $usuario = new usuario();
-
-    if (isset($_GET["id"])){
-        $usuario = new usuario($_GET["id"]);
-    }
-
     if ($_GET["action"] == "novo"){
         include_once ("../views/usuario_editar.php");
     } elseif($_GET["action"] == "editar") {
-        include_once ("../views/usuario_listar.php");
+        $usuario = new Usuario($_GET["id"]);
+        include_once ("../views/usuario_editar.php");
     }
 } else {
     //$lista[] = ""; // Remover depois de criar a classe usuario
-    $lista = (new usuario())->list();
+    $lista = (new Usuario())->list();
     include_once ("../views/usuario_listar.php"); 
 }
 
