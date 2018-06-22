@@ -22,8 +22,8 @@ $lista = (new Preco())->list();
               <table id="tbCandidate" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Tempo</th>
-                  <th>Valor</th>
+                  <th>Tempo (em Minutos)</th>
+                  <th>Valor (R$)</th>
                   <th width="30px">Ação</th>
                 </tr>
                 </thead>

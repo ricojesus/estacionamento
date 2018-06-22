@@ -19,7 +19,7 @@ class Preco {
 			$result = $this->get("preco_id = ". $id);
 			if (count($result) > 0){
 				$this->id = $result[0]["id"];
-				$this->tempo = $result[0]["tempo"];
+				$this->tempo = $result[0]["minutos"];
 				$this->valor = $result[0]["valor"];
 			}
 		}
@@ -40,7 +40,7 @@ class Preco {
 				':VALOR' => $this->valor
 			));
 		} else {
-			$sql->query("UPDATE preco SET minutos=:TEMPO WHERE preco_id = :ID", array(
+			$sql->query("UPDATE preco SET minutos=:TEMPO, valor=:VALOR WHERE preco_id = :ID", array(
 				':ID' => $this->id,
 				':TEMPO' => $this->tempo,
 				':VALOR' => $this->valor
@@ -60,7 +60,7 @@ class Preco {
 	private function get($criteria = null){
 		$sql = new Sql();
 
-		$query = "SELECT preco_id as id, minutos FROM preco WHERE 1=1"; //Garante trazer sempre somente os ativos
+		$query = "SELECT preco_id as id, minutos, valor FROM preco WHERE 1=1"; //Garante trazer sempre somente os ativos
 
 		if (!is_null($criteria)){
 			$query .= " and " . $criteria;
