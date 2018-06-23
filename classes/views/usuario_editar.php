@@ -17,7 +17,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Nome</label>
-                                <input type="text" class="form-control form-control-sm" name="txtNome" value="<?php  ?>">
+                                <input type="text" class="form-control form-control-sm" name="txtNome" value="<?php echo $usuario->nome;?>">
                             </div>
                         </div>               
                     </div>
@@ -25,7 +25,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Login</label>
-                                <input type="text" class="form-control form-control-sm" name="txtLogin" value="<?php  ?>">
+                                <input type="text" class="form-control form-control-sm" name="txtLogin" value="<?php echo $usuario->login;?>">
                             </div>
                         </div> 
                     </div>
@@ -34,7 +34,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Senha</label>
-                                <input type="password" class="form-control form-control-sm" name="txtSenha" value="<?php  ?>">
+                                <input type="password" class="form-control form-control-sm" name="txtSenha" value="<?php echo $usuario->senha;?>">
                             </div>
                         </div>       
                     </div>        
@@ -43,7 +43,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Confirm. Senha</label>
-                                <input type="password" class="form-control form-control-sm" name="txtConfSenha" value="<?php  ?>">
+                                <input type="password" class="form-control form-control-sm" name="txtConfSenha" value="<?php echo $usuario->senha;?>">
                             </div>
                         </div>      
                     </div>         
