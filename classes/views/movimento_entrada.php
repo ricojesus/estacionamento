@@ -8,10 +8,17 @@
                 <h4 class="card-title">Entrada de Veículos</h4>
             </div>
             <!-- /.card-header -->
+<?php 
+include_once ("../models/movimento.php");
+$movimento = new Movimento();
 
+if (isset($_GET["id"])){
+    $movimento = new Movimento($_GET["id"]);
+}
+ ?>
             <!-- form start -->
-            <form name="form1" role="form" method="POST" action="../controllers/teste_controller.php">
-                <input type="hidden" name="txtId" value="<?php echo $teste->id ?>">
+            <form name="form1" role="form" method="POST" action="../controllers/movimento_controller.php">
+                <input type="hidden" name="txtId" value="<?php echo $movimento->id ?>">
                 <div class="card-body">
 
                     <div class="row">
