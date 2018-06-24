@@ -33,7 +33,7 @@ if (isset($_GET["action"])){
 
 
 // Inclui o Rodape na tela
-include_once ("../views/footer.php");
+include_once ("../views/footer.php" );
 
 ?>
 
