@@ -29,7 +29,7 @@ if (isset($_GET["id"])){
                             </div>
                         </div>               
                     </div>
-                    <!--
+                    
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -47,9 +47,9 @@ if (isset($_GET["id"])){
                                 <select class="form-control form-control-sm" name="cboTipoVeiculo">
                                     <option id=0>SELECIONE A MARCA</option>
                                     <?php
-                                    //foreach ($lstMarca as $marca){
-                                    //    echo '<option id="' . $marca["id"] . '">' . $marca["nome"] . '</option>';
-                                    //}
+                                   foreach ($lstMarca as $marca){
+                                      echo '<option id="' . $marca["id"] . '">' . $marca["nome"] . '</option>';
+                                    }
                                     ?>
                                 </select>                            
                             </div>
