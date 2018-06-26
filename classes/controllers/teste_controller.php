@@ -4,11 +4,10 @@ include_once ("../models/teste.php");
 
 //Somente entrará nesse if quando retornando da tela de edição
 if (isset($_POST["btnGravar"])){
+    
     $teste = new Teste();
-
     $teste->id = $_POST["txtId"];
     $teste->descricao = $_POST["txtDescricao"];
-
     $teste->save();
 }
 
