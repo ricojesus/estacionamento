@@ -1,6 +1,6 @@
 <?php
 include_once ("../models/movimento.php");
-$movimento = new Movimento();
+$movimento = new Movimento($_GET["id"]);
 
 if (isset($_GET["id"])){
     $movimento = new Movimento($_GET["id"]);

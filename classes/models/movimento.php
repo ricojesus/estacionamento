@@ -47,8 +47,13 @@ class Movimento{
 		$sql = new Sql();
 
 		if ($this->id == 0){
-			$sql->query("INSERT INTO movimento (placa) values (:placa)", array(
-				':placa' => $this->placa
+			$sql->query("INSERT INTO movimento (placa, entrada, saida, valor, status) values (:PLACA, :ENTRADA, :SAIDA, :VALOR, :STATUS)", array(
+				':PLACA' => $this->placa,
+				':ENTRADA' => $this->entrada,
+				':SAIDA' => $this->saida,
+				':VALOR' => $this->valor,
+				':STATUS' => $this->status
+
 			));
 		} else {
 			$sql->query("UPDATE movimento SET placa=:placa WHERE movimento_id = :ID", array(
