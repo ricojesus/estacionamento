@@ -25,7 +25,7 @@ if (isset($_GET["id"])){
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>Placa</label>
-                                <input type="text" class="form-control form-control-sm" name="txtPlaca">
+                                <input type="text" class="form-control form-control-sm" name="txtPlaca" value="<?php echo $movimento->placa ?>">
                             </div>
                         </div>               
                     </div>
