@@ -8,21 +8,28 @@
                 <h4 class="card-title">Entrada de Veículos</h4>
             </div>
             <!-- /.card-header -->
+<?php 
+include_once ("../models/movimento.php");
+$movimento = new Movimento();
 
+if (isset($_GET["id"])){
+    $movimento = new Movimento($_GET["id"]);
+}
+ ?>
             <!-- form start -->
-            <form name="form1" role="form" method="POST" action="../controllers/teste_controller.php">
-                <input type="hidden" name="txtId" value="<?php echo $teste->id ?>">
+            <form name="form1" role="form" method="POST" action="../controllers/movimento_controller.php">
+                <input type="hidden" name="txtId" value="<?php echo $movimento->id ?>">
                 <div class="card-body">
 
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>Placa</label>
-                                <input type="text" class="form-control form-control-sm" name="txtPlaca">
+                                <input type="text" class="form-control form-control-sm" name="txtPlaca" value="<?php echo $movimento->placa ?>">
                             </div>
                         </div>               
                     </div>
-                    <!--
+                    
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -40,9 +47,9 @@
                                 <select class="form-control form-control-sm" name="cboTipoVeiculo">
                                     <option id=0>SELECIONE A MARCA</option>
                                     <?php
-                                    //foreach ($lstMarca as $marca){
-                                    //    echo '<option id="' . $marca["id"] . '">' . $marca["nome"] . '</option>';
-                                    //}
+                                   foreach ($lstMarca as $marca){
+                                      echo '<option id="' . $marca["id"] . '">' . $marca["nome"] . '</option>';
+                                    }
                                     ?>
                                 </select>                            
                             </div>
