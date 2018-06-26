@@ -16,9 +16,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label>Tempo</label>
+                                <label>Tempo - (em minutos) </label>
                                 <input type="text" class="form-control form-control-sm" name="txtTempo" value="<?php echo $preco->tempo ?>">
-                                <label>Valor</label>
+                                <label>Valor - Ex. 3.25 </label>
                                 <input type="text" class="form-control form-control-sm" name="txtValor" value="<?php echo $preco->valor ?>">
                             </div>
                         </div>               
