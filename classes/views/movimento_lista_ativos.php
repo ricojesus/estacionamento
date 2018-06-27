@@ -24,15 +24,16 @@
                 </thead>
                 <tbody>
                   <?php
-                  /*                  
+                
+                  $lista = (new Movimento())->listActives();        
                   foreach ($lista as $row){
                     echo '<tr>';
-                    echo '<td>' . $row["descricao"] . '</td>';
+                    echo '<td>' . $row["placa"] . '</td>';
                     echo '<td align="center" >';
                     echo '<a href="../controllers/teste_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Editar</a>';
                     echo '</tr>';
                   }
-                  */
+                 
                   ?>
                 </tbody>
               </table>

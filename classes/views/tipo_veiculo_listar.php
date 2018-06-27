@@ -21,7 +21,7 @@
                 </thead>
                 <tbody>
                   <?php
-                  //while ($row = $lista->fetch_assoc()) {
+                  while ($row = $lista->fetch_assoc()) {
                   foreach ($lista as $row){
                     echo '<tr>';
                     echo '<td>' . $row["descricao"] . '</td>';
@@ -30,11 +30,13 @@
                     echo '<a href="../controllers/tipo_veiculo_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Excluir</a>';
                     echo '</tr>';
                   }
+                }
+                  
                   ?>
                 </tbody>
               </table>
             </div>
-            <!-- /.card-body -->
+            
 
             <div class="card-footer">
               <a href="/estacionamento/classes/controllers/tipo_veiculo_controller.php?action=novo" class="btn btn-primary">Novo</a>
@@ -45,7 +47,7 @@
 
     </section>
     </form>
-    <!-- Main content -->
+    
 
 <script type="text/javascript">
   $('#tbCandidate').DataTable( {
@@ -53,4 +55,3 @@
 } );
 </script>
 
-<!-- page script -->
