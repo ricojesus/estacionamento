@@ -63,7 +63,7 @@ if (isset($_GET["id"])){
                                 <input type="text" class="form-control form-control-sm" name="txtModelo">
                             </div>
                         </div>               
-                    </div> -->
+                    </div>
 
                 </div>
 
@@ -73,7 +73,7 @@ if (isset($_GET["id"])){
                 <a href="/estacionamento/" class="btn btn-outline-secondary btn-sm">Voltar</a>
                 </div>            
             </form>
-            <!-- /.Form end -->
+           
 
             </div>
         </div>
