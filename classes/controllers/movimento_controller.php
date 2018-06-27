@@ -17,11 +17,9 @@ if (isset($_GET["action"])){
 
     if (isset($_POST["btnGravar"])){
         $movimento = new Movimento();
-    $movimento->placa = $_POST["txtPlaca"];
-    $movimento->entrada = $_POST["cboTipoVeiculo"];
-    $movimento->saida = $_POST["saida"];
-    $movimento->valor = $_POST["valor"];
-    $movimento->save();
+        $movimento->id = $_POST["txtId"];
+        $movimento->placa = $_POST["txtPlaca"];
+        $movimento->save();
 }
     $lstMarca = (new Marca())->list();
     include_once ("../views/movimento_entrada.php"); 
