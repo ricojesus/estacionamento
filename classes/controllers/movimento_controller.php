@@ -19,6 +19,7 @@ if (isset($_GET["action"])){
         $movimento = new Movimento();
         $movimento->id = $_POST["txtId"];
         $movimento->placa = $_POST["txtPlaca"];
+        $movimento->entrada = date('Y-m-d H:i');
         $movimento->save();
 }
     $lstMarca = (new Marca())->list();
