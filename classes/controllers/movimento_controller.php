@@ -1,9 +1,11 @@
 <?php
 include_once ("../views/header.php");
 include_once ("../models/marca.php");
+include_once ("../models/movimento.php");
 
 
 if (isset($_GET["action"])){
+    $lista = (new Movimento())->list();
     switch ($_GET["action"]){
         case "saida":
             include_once ("../views/movimento_saida.php");
