@@ -21,7 +21,7 @@
                 </thead>
                 <tbody>
                   <?php
-                  while ($row = $lista->fetch_assoc()) {
+                  //while ($row = $lista->fetch_assoc()) {
                   foreach ($lista as $row){
                     echo '<tr>';
                     echo '<td>' . $row["descricao"] . '</td>';
@@ -30,7 +30,7 @@
                     echo '<a href="../controllers/tipo_veiculo_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Excluir</a>';
                     echo '</tr>';
                   }
-                }
+                //}
                   
                   ?>
                 </tbody>
