@@ -1,12 +1,3 @@
-<?php
-include_once ("../models/movimento.php");
-$movimento = new Movimento($_GET["id"]);
-
-if (isset($_GET["id"])){
-    $movimento = new Movimento($_GET["id"]);
-}
-
-?>
 
 <br>
 <section class="content">
@@ -28,17 +19,17 @@ if (isset($_GET["id"])){
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>Placa</label>
-                                <input type="text" class="form-control form-control-sm" name="txtPlaca">
+                                <input type="text" class="form-control form-control-sm" name="txtPlaca" value="<?php echo $movimento->placa; ?>">
                             </div>
                         </div>               
                         <div class="col-md-9">
                             <div class="form-group">
                                 <label>Horário de Entrada</label>
-                                <input type="text" class="form-control form-control-sm" readonly name="txtHoraEntrada">
+                                <input type="text" class="form-control form-control-sm" readonly name="txtHoraEntrada" value="<?php echo $movimento->entrada; ?>">
                             </div>
                         </div>  
                     </div>
-
+                    <!--
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -65,6 +56,8 @@ if (isset($_GET["id"])){
                             </div>
                         </div>               
                     </div>
+
+                    -->
 
                 </div>
 

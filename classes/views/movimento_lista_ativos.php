@@ -24,13 +24,16 @@
                 </thead>
                 <tbody>
                   <?php
-                
-                  $lista = (new Movimento())->listActives();        
+                  //a lista deve ser criada dentro do controller
+                  //$lista = (new Movimento())->listActives();        
                   foreach ($lista as $row){
                     echo '<tr>';
                     echo '<td>' . $row["placa"] . '</td>';
+                    echo '<td></td>';
+                    echo '<td></td>';
+                    echo '<td>' . $row["entrada"] . '</td>';
                     echo '<td align="center" >';
-                    echo '<a href="../controllers/teste_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Editar</a>';
+                    echo '<a href="../controllers/movimento_controller.php?action=saida&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Saída</a>';
                     echo '</tr>';
                   }
                  

@@ -7,7 +7,7 @@
           <div class="card card-primary card-outline">
             <!-- /.card-header -->
             <div class="card-header">
-              <h4 class="card-title">Lista de Teste</h4>
+              <h4 class="card-title">Lista de Tipos de Veículos</h4>
             </div>
             <!-- /.card-header -->
             <!-- card-body -->             
@@ -21,13 +21,14 @@
                 </thead>
                 <tbody>
                   <?php
+                  // para que raios servia esse while aqui ???
                   //while ($row = $lista->fetch_assoc()) {
                   foreach ($lista as $row){
                     echo '<tr>';
                     echo '<td>' . $row["descricao"] . '</td>';
                     echo '<td align="center" >';
-                    echo '<a href="../controllers/tipo_veiculo_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Editar</a>';
-                    echo '<a href="../controllers/tipo_veiculo_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Excluir</a>';
+                    echo '<a href="../controllers/tipo_veiculo_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" >Editar</a>';
+                    echo '&nbsp;<a href="../controllers/tipo_veiculo_controller.php?action=excluir&id=' . $row["id"] .  '" class="btn-sm btn-danger fa fa-edit" onclick="return confirma();" >Excluir</a>';
                     echo '</tr>';
                   }
                 //}
@@ -50,6 +51,12 @@
     
 
 <script type="text/javascript">
+  function confirma(){
+    if (!confirm('Confirma a Exclusão?')){
+      return false;
+    }
+  }
+
   $('#tbCandidate').DataTable( {
     responsive: true
 } );

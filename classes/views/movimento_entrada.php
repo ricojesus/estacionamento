@@ -8,14 +8,7 @@
                 <h4 class="card-title">Entrada de Veículos</h4>
             </div>
             <!-- /.card-header -->
-<?php 
-include_once ("../models/movimento.php");
-$movimento = new Movimento();
 
-if (isset($_GET["id"])){
-    $movimento = new Movimento($_GET["id"]);
-}
- ?>
             <!-- form start -->
             <form name="form1" role="form" method="POST" action="../controllers/movimento_controller.php">
                 <input type="hidden" name="txtId" value="<?php echo $movimento->id ?>">
@@ -29,6 +22,8 @@ if (isset($_GET["id"])){
                             </div>
                         </div>               
                     </div>
+
+                    <!--
                     
                     <div class="row">
                         <div class="col-md-12">
@@ -47,9 +42,9 @@ if (isset($_GET["id"])){
                                 <select class="form-control form-control-sm" name="cboTipoVeiculo">
                                     <option id=0>SELECIONE A MARCA</option>
                                     <?php
-                                   foreach ($lstMarca as $marca){
-                                      echo '<option id="' . $marca["id"] . '">' . $marca["nome"] . '</option>';
-                                    }
+                                   //foreach ($lstMarca as $marca){
+                                    //  echo '<option id="' . $marca["id"] . '">' . $marca["nome"] . '</option>';
+                                   // }
                                     ?>
                                 </select>                            
                             </div>
@@ -64,6 +59,8 @@ if (isset($_GET["id"])){
                             </div>
                         </div>               
                     </div>
+
+                    -->
 
                 </div>
 
