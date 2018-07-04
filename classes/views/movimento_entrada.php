@@ -15,10 +15,10 @@
                 <div class="card-body">
 
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>Placa</label>
-                                <input type="text" class="form-control form-control-sm" name="txtPlaca" value="<?php echo $movimento->placa ?>">
+                                <input type="text" class="form-control form-control-sm" name="txtPlaca" placeholder="AAA-9999" data-mask="AAA-0000"  value="<?php echo $movimento->placa ?>">
                             </div>
                         </div>               
                     </div>
@@ -79,5 +79,10 @@
 
 <script type="text/javascript">
     document.form1.txtPlaca.focus();
+
+    $(document).ready(function(){
+        $('#txtPlaca').mask('AAA-0000');
+    });
+
 </script>
 

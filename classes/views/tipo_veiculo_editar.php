@@ -5,7 +5,7 @@
             <div class="card card-primary card-outline">
             <!-- /.card-header -->
             <div class="card-header">
-                <h4 class="card-title">Cadastro de Teste</h4>
+                <h4 class="card-title">Cadastro de Tipos de Veículos</h4>
             </div>
             <!-- /.card-header -->
 
