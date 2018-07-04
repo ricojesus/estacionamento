@@ -24,12 +24,17 @@ if (isset($_GET["action"])){
         include_once ("../views/tipo_veiculo_editar.php");
     } elseif($_GET["action"] == "editar") {
         include_once ("../views/tipo_veiculo_editar.php");
-    } 
+    } elseif($_GET["action"] == "excluir") {    
+        $tipoVeiculo = new TipoVeiculo($_GET["id"]);
+        $tipoVeiculo->delete();
+
+        $lista = (new TipoVeiculo())->list();
+        include_once ("../views/tipo_veiculo_listar.php"); 
+    }
 } else {
     $lista = (new TipoVeiculo())->list();
     include_once ("../views/tipo_veiculo_listar.php"); 
 }
-
 
 // Inclui o Rodape na tela
 include_once ("../views/footer.php" );

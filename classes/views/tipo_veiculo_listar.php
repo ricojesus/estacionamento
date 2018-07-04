@@ -38,7 +38,6 @@
               </table>
             </div>
             
-
             <div class="card-footer">
               <a href="/estacionamento/classes/controllers/tipo_veiculo_controller.php?action=novo" class="btn btn-primary">Novo</a>
             </div>             

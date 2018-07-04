@@ -1,4 +1,3 @@
-
 <br>
 <section class="content">
     <div class="row justify-content-center align-items-center">
