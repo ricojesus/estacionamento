@@ -1,0 +1,1 @@
+ALTER TABLE `movimento` ADD `modelo` VARCHAR(50) NOT NULL AFTER `entrada`;
