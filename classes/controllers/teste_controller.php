@@ -2,6 +2,10 @@
 include_once ("../views/header.php");
 include_once ("../models/teste.php");
 
+// include para validar o login do usuário a cada acesso.
+include_once ("../controllers/login_controller.php");
+
+
 //Somente entrará nesse if quando retornando da tela de edição
 if (isset($_POST["btnGravar"])){
     

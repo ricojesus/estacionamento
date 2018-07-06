@@ -43,5 +43,3 @@ if (isset($_GET["action"])){
 include_once ("../views/footer.php");
 
 ?>
-
-
