@@ -39,9 +39,11 @@ if (isset($_GET["action"])){
     include_once ("../views/movimento_entrada.php"); 
 }
     // Adriano -- Não entendi esse include aqui se já foi incluso no começo do programa
+    //esta include serve pa chama a classe movimento senao gera um erro
     //include_once ("../models/movimento.php");
     
     // Adriano -- Para que serve esse list?
+    //esta list ja estava aqui
     //$lstMarca = (new Marca())->list();
 
 
