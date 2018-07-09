@@ -15,13 +15,13 @@
                 <div class="card-body">
 
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>Placa</label>
                                 <input type="text" class="form-control form-control-sm" name="txtPlaca" value="<?php echo $movimento->placa; ?>">
                             </div>
                         </div>               
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="form-group">
                                 <label>Horário de Entrada</label>
                                 <input type="text" class="form-control form-control-sm" readonly name="txtHoraEntrada" value="<?php echo $movimento->entrada; ?>">
