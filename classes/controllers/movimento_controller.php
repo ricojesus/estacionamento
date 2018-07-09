@@ -9,7 +9,7 @@ if (isset($_POST["btnGravar"])){
     $movimento->id = $_POST["txtId"];
     $movimento->placa = $_POST["txtPlaca"];
     $movimento->entrada = date('Y-m-d H:i');
-    //$movimento->modelo = $_POST["txtModelo"];
+    $movimento->modelo = $_POST["txtModelo"];
     $movimento->save();
 }
 
