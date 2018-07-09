@@ -30,7 +30,6 @@
             Cadastros
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/estacionamento/classes/controllers/teste_controller.php">Teste</a>
             <a class="dropdown-item" href="/estacionamento/classes/controllers/tipo_veiculo_controller.php">Tipo Veiculo</a>
             <a class="dropdown-item" href="/estacionamento/classes/controllers/marca_controller.php">Marcas</a>
             <a class="dropdown-item" href="/estacionamento/classes/controllers/preco_controller.php">Tabela de Preços</a>

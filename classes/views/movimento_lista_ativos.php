@@ -29,8 +29,8 @@
                   foreach ($lista as $row){
                     echo '<tr>';
                     echo '<td>' . $row["placa"] . '</td>';
-                    echo '<td></td>';
-                    echo '<td></td>';
+                    echo '<td>' . $row["marca"] . '</td>';
+                    echo '<td>' . $row["modelo"] . '</td>';
                     echo '<td>' . $row["entrada"] . '</td>';
                     echo '<td align="center" >';
                     echo '<a href="../controllers/movimento_controller.php?action=saida&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Saída</a>';

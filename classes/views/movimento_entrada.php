@@ -22,6 +22,16 @@
                             </div>
                         </div>               
                     </div>
+                    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Modelo</label>
+                                <input type="text" class="form-control form-control-sm" name="txtModelo" placeholder="modelo" data-mask="modelo"  value="<?php echo $movimento->modelo ?>">
+                            </div>
+                        </div>               
+                    </div>
+                
 
                     <!--
                     
