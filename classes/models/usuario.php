@@ -43,11 +43,10 @@ class Usuario{
 				':STATUS' => 1
 			));
 		} else {
-			$sql->query("UPDATE usuario SET nome=:NOME, login=:LOGIN, senha=:SENHA  WHERE usuario_id = :ID", array(
+			$sql->query("UPDATE usuario SET nome=:NOME, login=:LOGIN  WHERE usuario_id = :ID", array(
 				':ID' => $this->id,
 				':NOME' => $this->nome,
 				':LOGIN' => $this->login,
-				':SENHA' => $this->senha
 			));
 		}		
 	}
