@@ -11,6 +11,8 @@ if (isset($_POST["btnGravar"])){
     $movimento->entrada = date('Y-m-d H:i');
     $movimento->modelo = $_POST["txtModelo"];
     $movimento->save();
+
+    echo "<script>window.open('../views/ticket_entrada.php', '_blank');</script>";
 }
 
 if (isset($_GET["action"])){
