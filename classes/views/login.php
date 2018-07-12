@@ -8,7 +8,13 @@
         <div class="panel panel-info" >
             <div class="panel-heading">
                 <div class="panel-title">Login</div>
-            </div>     
+            </div>    
+
+            <?php
+                if (isset($error)){
+                    echo '<p>' .  $error . '</p>';
+                }
+            ?>
 
             <div style="padding-top:30px" class="panel-body" >
                 <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>

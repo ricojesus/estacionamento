@@ -1,0 +1,1 @@
+ALTER TABLE `movimento` ADD `marca_id` INT NOT NULL AFTER `movimento_id`;

@@ -58,6 +58,12 @@ class Usuario{
 		$sql->query("UPDATE usuario SET status=2 WHERE usuario_id = " . $this->id);
 	}
 
+	public function login($login, $password){
+		$sql = new Sql();
+
+		return $this->get("login = '". $login . "' and senha = '" . md5($password). "'") ;
+	}
+
 	// metodo interno serve para montar todas as consultas de acesso aos dados de usuario
 	private function get($criteria = null){
 		$sql = new Sql();

@@ -9,12 +9,11 @@ if (isset($_POST["btnGravar"])){
     $usuario->id = $_POST["txtId"];
     $usuario->nome = $_POST["txtNome"];
     $usuario->login = $_POST["txtLogin"];
-    $usuario->senha = $_POST["txtSenha"];
-    $passwordEncriptada = md5($usuario->senha); //encript a senha com sistema md5 antes de salvar no banco de dados
-    $usuario->senha = $passwordEncriptada; // pega de volta para a classe de usuario a senha ja encriptada
+    $usuario->senha = md5($_POST["txtSenha"]);
+    //$passwordEncriptada = md5($usuario->senha); //encript a senha com sistema md5 antes de salvar no banco de dados
+    //$usuario->senha = md5($usuario->senha); // pega de volta para a classe de usuario a senha ja encriptada
     // verifica se os dados estao corretos antes de salvar no banco de dados o cadastro do usuarior
 
-  
     $usuario->save();
 }
 

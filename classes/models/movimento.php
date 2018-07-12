@@ -8,6 +8,7 @@ class Movimento{
 	public $id=0;
     public $placa;
 	public $entrada;
+	public $marca;
 	public $modelo;
     public $saida;
     public $valor;
@@ -21,6 +22,7 @@ class Movimento{
 				$this->id = $result[0]["id"];
                 $this->placa = $result[0]["placa"];
 				$this->entrada = $result[0]["entrada"];
+				$this->marca = $result[0]["marca_id"];
 				$this->modelo = $result[0]["modelo"];
                 $this->saida = $result[0]["saida"];
                 $this->valor = $result[0]["valor"];
@@ -49,9 +51,10 @@ class Movimento{
 		$sql = new Sql();
 
 		if ($this->id == 0){
-			$sql->query("INSERT INTO movimento (placa, entrada, modelo, saida, valor, status) values (:PLACA, :ENTRADA, :MODELO, :SAIDA, :VALOR, :STATUS)", array(
+			$sql->query("INSERT INTO movimento (placa, entrada, marca_id, modelo, saida, valor, status) values (:PLACA, :ENTRADA, :MARCA, :MODELO, :SAIDA, :VALOR, :STATUS)", array(
 				':PLACA' => strtoupper($this->placa),
 				':ENTRADA' => $this->entrada,
+				':MARCA' => $this->marca,
 				':MODELO' => $this->modelo,
 				':SAIDA' => $this->saida,
 				':VALOR' => $this->valor,
@@ -77,7 +80,7 @@ class Movimento{
 	private function get($criteria = null){
 		$sql = new Sql();
 
-		$query = "SELECT movimento_id as id, placa, entrada, modelo, saida, valor, status FROM movimento WHERE status != 3"; //Garante trazer sempre somente os ativos
+		$query = "SELECT movimento_id as id, placa, entrada, marca_id, modelo, saida, valor, status FROM movimento WHERE status != 3"; //Garante trazer sempre somente os ativos
 
 		if (!is_null($criteria)){
 			$query .= " and " . $criteria;

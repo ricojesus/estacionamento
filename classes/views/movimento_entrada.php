@@ -22,6 +22,22 @@
                             </div>
                         </div>               
                     </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Marca</label>
+                                <select class="form-control form-control-sm" name="cboTipoVeiculo">
+                                    <option id=0>SELECIONE A MARCA</option>
+                                    <?php
+                                    foreach ($lstMarca as $marca){
+                                        echo '<option id="' . $marca["id"] . '">' . $marca["nome"] . '</option>';
+                                    }
+                                    ?>
+                                </select>                            
+                            </div>
+                        </div>               
+                    </div>
                     
                     <div class="row">
                         <div class="col-md-12">
@@ -45,32 +61,10 @@
                         </div>               
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label>Marca</label>
-                                <select class="form-control form-control-sm" name="cboTipoVeiculo">
-                                    <option id=0>SELECIONE A MARCA</option>
-                                    <?php
-                                   //foreach ($lstMarca as $marca){
-                                    //  echo '<option id="' . $marca["id"] . '">' . $marca["nome"] . '</option>';
-                                   // }
-                                    ?>
-                                </select>                            
-                            </div>
-                        </div>               
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label>Modelo</label>
-                                <input type="text" class="form-control form-control-sm" name="txtModelo">
-                            </div>
-                        </div>               
-                    </div>
-
                     -->
+
+
+                
 
                 </div>
 

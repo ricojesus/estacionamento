@@ -29,7 +29,7 @@
                   foreach ($lista as $row){
                     echo '<tr>';
                     echo '<td>' . $row["placa"] . '</td>';
-                    echo '<td></td>';
+                    echo '<td>' . $row["marca_id"] . '</td>';
                     echo '<td>' . $row["modelo"] . '</td>';
                     echo '<td>' . $row["entrada"] . '</td>';
                     echo '<td align="center" >';

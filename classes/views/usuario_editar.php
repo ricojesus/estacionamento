@@ -34,7 +34,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Senha</label>
-                                <input type="password" class="form-control form-control-sm" name="txtSenha" value="<?php echo $usuario->senha;?>">
+                                <input type="password" class="form-control form-control-sm" name="txtSenha" <?php echo ($usuario->id !=0)?'disabled':''; ?> value="<?php echo $usuario->senha;?>">
                             </div>
                         </div>       
                     </div>        
@@ -43,7 +43,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Confirm. Senha</label>
-                                <input type="password" class="form-control form-control-sm" name="txtConfSenha" value="<?php echo $usuario->senha;?>">
+                                <input type="password" class="form-control form-control-sm" name="txtConfSenha" <?php echo ($usuario->id !=0)?'disabled':''; ?> value="<?php echo $usuario->senha;?>">
                             </div>
                         </div>      
                     </div>         

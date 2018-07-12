@@ -5,14 +5,18 @@ include_once ("../models/movimento.php");
 
 
 if (isset($_POST["btnGravar"])){
+
+    var_dump($_POST);
+
     $movimento = new Movimento();
     $movimento->id = $_POST["txtId"];
     $movimento->placa = $_POST["txtPlaca"];
     $movimento->entrada = date('Y-m-d H:i');
+    $movimento->marca = $_POST["cboTipoVeiculo"];
     $movimento->modelo = $_POST["txtModelo"];
-    $movimento->save();
+    //$movimento->save();
 
-    echo "<script>window.open('../views/ticket_entrada.php', '_blank');</script>";
+    //echo "<script>window.open('../views/ticket_entrada.php', '_blank');</script>";
 }
 
 if (isset($_GET["action"])){
@@ -38,6 +42,7 @@ if (isset($_GET["action"])){
     } //; - Ponto e virgula desnecessario
 } else {
     $movimento = new Movimento();
+    $lstMarca = (new Marca())->list();
     include_once ("../views/movimento_entrada.php"); 
 }
     // Adriano -- Não entendi esse include aqui se já foi incluso no começo do programa
