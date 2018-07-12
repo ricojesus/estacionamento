@@ -17,6 +17,10 @@ if (isset($_POST["btnGravar"])){
     $usuario->save();
 }
 
+if (isset($_POST["btnAlterarSenha"])){
+
+}
+
 //Roteia para a tela correta
 if (isset($_GET["action"])){
 
@@ -30,6 +34,8 @@ if (isset($_GET["action"])){
         include_once ("../views/usuario_editar.php");
     } elseif($_GET["action"] == "editar") {
         include_once ("../views/usuario_editar.php");
+    } elseif($_GET["action"] == "trocasenha") {
+        include_once ("../views/usuario_troca_senha.php");
     }
 } else {
     //$lista[] = ""; // Remover depois de criar a classe usuario

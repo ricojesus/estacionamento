@@ -17,7 +17,7 @@
                 <tr>
                   <th>Nome</th>
                   <th>Login</th>
-                  <th width="30px">Ação</th>
+                  <th width="200px">Ação</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -29,6 +29,7 @@
                     echo '<td>' . $row["login"] . '</td>';
                     echo '<td align="center" >';
                     echo '<a href="../controllers/usuario_controller.php?action=editar&id=' . $row["id"] .  '" class="btn-sm btn-success fa fa-edit" class="confirmation" >Editar</a>';
+                    echo ' <a href="../controllers/usuario_controller.php?action=trocasenha&id=' . $row["id"] .  '" class="btn-sm btn-warning fa fa-edit" class="confirmation" >Alterar Senha</a>';
                     echo '</tr>';
                   }
                   
