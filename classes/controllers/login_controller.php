@@ -3,8 +3,7 @@ include_once ("../models/usuario.php");
 
 if (!isset($_SESSION["usuario_id"] )){
     if (isset($_POST["btnLogin"])){
-        session_start();
-
+       
         $result = (new Usuario)->login($_POST["username"], $_POST["password"]);
         
         if (count($result) == 0) {
