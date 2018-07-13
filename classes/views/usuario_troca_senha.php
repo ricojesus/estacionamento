@@ -14,11 +14,16 @@
                 <input type="hidden" name="txtId" value="<?php echo $usuario->id ?>">
                 <div class="card-body">
                     <div class="row">
-
+                      
                         <div class="col-md-6">
                             <div class="form-group">
+                            <label>Nome</label><?php echo ': '.$usuario->nome;?><br>
+                            <label>Login</label><?php echo ': '.$usuario->login;?><br>
                                 <label>Senha</label>
-                                <input type="password" class="form-control form-control-sm" name="txtSenha">
+                                <input type="hidden" class="form-control form-control-sm" name="txtNome" value="<?php echo $usuario->nome;?>">
+                                <input type="hidden" class="form-control form-control-sm" name="txtLogin" value="<?php echo $usuario->login;?>">
+                                
+                                <input type="password" class="form-control form-control-sm" name="txtSenha"  value="<?php echo $usuario->senha;?>">
                             </div>
                         </div>       
                     </div>        
@@ -27,7 +32,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Confirm. Senha</label>
-                                <input type="password" class="form-control form-control-sm" name="txtConfSenha">
+                                <input type="password" class="form-control form-control-sm" name="txtConfSenha" value="<?php echo $usuario->senha;?>>
                             </div>
                         </div>      
                     </div>         

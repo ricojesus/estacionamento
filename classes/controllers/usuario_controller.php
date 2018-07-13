@@ -21,6 +21,8 @@ if (isset($_POST["btnAlterarSenha"])){
     $usuario = new Usuario();
 
     $usuario->id = $_POST["txtId"];
+    $usuario->nome = $_POST["txtNome"];
+    $usuario->login = $_POST["txtLogin"];
     $usuario->senha = md5($_POST["txtSenha"]);
     $usuario->save();
 
