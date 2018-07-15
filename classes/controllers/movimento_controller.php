@@ -6,7 +6,7 @@ include_once ("../models/movimento.php");
 
 if (isset($_POST["btnGravar"])){
 
-    var_dump($_POST);
+    //var_dump($_POST); retirado a Array da tela de entrada e salvando no Patio.(marlony)
 
     $movimento = new Movimento();
     $movimento->id = $_POST["txtId"];
@@ -14,7 +14,7 @@ if (isset($_POST["btnGravar"])){
     $movimento->entrada = date('Y-m-d H:i');
     $movimento->marca = $_POST["cboTipoVeiculo"];
     $movimento->modelo = $_POST["txtModelo"];
-    //$movimento->save();
+    $movimento->save();
 
     //echo "<script>window.open('../views/ticket_entrada.php', '_blank');</script>";
 }
