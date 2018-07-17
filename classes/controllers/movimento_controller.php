@@ -7,7 +7,7 @@ include_once ("../models/movimento.php");
 if (isset($_POST["btnGravar"])){
 
     //var_dump($_POST); retirado a Array da tela de entrada e salvando no Patio.(marlony)
-
+    
     $movimento = new Movimento();
     $movimento->id = $_POST["txtId"];
     $movimento->placa = $_POST["txtPlaca"];
@@ -15,8 +15,30 @@ if (isset($_POST["btnGravar"])){
     $movimento->marca = $_POST["cboTipoVeiculo"];
     $movimento->modelo = $_POST["txtModelo"];
     $movimento->save();
+    
 
     //echo "<script>window.open('../views/ticket_entrada.php', '_blank');</script>";
+}
+
+//tentando fazer a saida com um novo botão pois no codigo acima nao funcionou
+if(isset($_POST["btnGravarSaida"])){
+
+    $movimento = new Movimento();
+    $movimento->status = 2;
+    $movimento->saida = date ('Y-m-d H:i');
+    $date2 = ($movimento->saida);
+    $date1 = $_POST["txtHoraEntrada"];
+    
+    $datetime1 = new DateTime('2009-10-11');
+    $datetime2 = new DateTime('2009-10-13');
+    $interval = $datetime1->diff($datetime2);
+    echo $interval->format('%R%a days');
+    var_dump($interval);
+    var_dump($date1);
+    var_dump($date2);
+    
+
+    
 }
 
 if (isset($_GET["action"])){
@@ -52,6 +74,8 @@ if (isset($_GET["action"])){
     // Adriano -- Para que serve esse list?
     //esta list ja estava aqui
     //$lstMarca = (new Marca())->list();
+
+
 
 
 include_once ("../views/footer.php");

@@ -61,10 +61,14 @@
                 </div>
 
                 <div class="card-footer">
-                <button type="submit" name="btnGravar" class="btn btn-sm btn-primary">Registrar Saída</button>
+                <button type="submit" name="btnGravarSaida" class="btn btn-sm btn-primary">Registrar Saída</button>
                 <a href="/estacionamento/classes/controllers/movimento_controller.php?action=lista_ativos" class="btn btn-sm btn-success">Veículos no Patio</a>
                 <a href="/estacionamento/" class="btn btn-outline-secondary btn-sm">Voltar</a>
                 </div>            
+                <php
+                    
+                >
+
             </form>
             <!-- /.Form end -->
 
