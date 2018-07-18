@@ -26,18 +26,13 @@ if(isset($_POST["btnGravarSaida"])){
     $movimento = new Movimento();
     $movimento->status = 2;
     $movimento->saida = date ('Y-m-d H:i');
+    $date  = date_create($_POST["txtHoraEntrada"]);
+    $date1 = date_format($date, 'Y-m-d H:i:s');
     $date2 = ($movimento->saida);
-    $date1 = $_POST["txtHoraEntrada"];
-    
-    $datetime1 = new DateTime('2009-10-11');
-    $datetime2 = new DateTime('2009-10-13');
-    $interval = $datetime1->diff($datetime2);
-    echo $interval->format('%R%a days');
-    var_dump($interval);
-    var_dump($date1);
-    var_dump($date2);
-    
-
+    //echo $date1 . "<br>";
+    //echo $date2;
+    $diferenca=$date2->diff($date1);
+    print_r($diferenca);
     
 }
 
