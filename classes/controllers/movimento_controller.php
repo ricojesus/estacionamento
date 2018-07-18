@@ -25,9 +25,18 @@ if(isset($_POST["btnGravarSaida"])){
 
     $movimento = new Movimento($_POST["txtId"]);
 
-    $movimento->close();
+    $saida = new DateTime("now");
+    $entrada = new DateTime($movimento->entrada);
+
+    echo (($saida->diff($entrada)->days) * 24) *60;
+
+    //$interval = date_diff($saida, $entrada);
+
+    //print_r($interval->minutes);
+
+    //$movimento->close();
     
-    include_once ("../views/movimento_entrada.php");
+    //include_once ("../views/movimento_entrada.php");
 }
 
 if (isset($_GET["action"])){
