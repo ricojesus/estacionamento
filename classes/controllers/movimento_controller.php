@@ -25,27 +25,9 @@ if(isset($_POST["btnGravarSaida"])){
 
     $movimento = new Movimento($_POST["txtId"]);
 
-    $saida = new DateTime("now");
-    $entrada = new DateTime($movimento->entrada);
+    $movimento->close();
+    include_once ("../views/movimento_entrada.php");
 
-    echo 'Saida: ' . $saida->getTimestamp();
-
-    echo 'Entrada: ' . $entrada->getTimestamp();
-
-    echo 'Resultado: ' . (abs($saida->getTimestamp() - $entrada->getTimestamp()) / 60);
-
-
-    //$intervalo = $saida->diff($entrada);
-
-    //echo $intervalo->format('%R%i');
-
-    //$interval = date_diff($saida, $entrada);
-
-    //print_r($interval->minutes);
-
-    //$movimento->close();
-    
-    //include_once ("../views/movimento_entrada.php");
 }
 
 if (isset($_GET["action"])){

@@ -73,7 +73,7 @@ class Movimento{
 		$sql = new Sql();
 
 		// Calcula o tempo de permanencia
-		$result = $sql->select("SELECT round((time_to_sec(now() - entrada) / 60), 0) as tempo FROM movimento where movimento_id = $this->id");
+		$result = $sql->select("SELECT round(TIMESTAMPDIFF(MINUTE, entrada, now()), 0) as tempo FROM movimento where movimento_id = $this->id");
 		$tempo = $result[0]["tempo"];
 
 		// Encontra o valor
