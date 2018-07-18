@@ -28,7 +28,16 @@ if(isset($_POST["btnGravarSaida"])){
     $saida = new DateTime("now");
     $entrada = new DateTime($movimento->entrada);
 
-    echo (($saida->diff($entrada)->days) * 24) *60;
+    echo 'Saida: ' . $saida->getTimestamp();
+
+    echo 'Entrada: ' . $entrada->getTimestamp();
+
+    echo 'Resultado: ' . (abs($saida->getTimestamp() - $entrada->getTimestamp()) / 60);
+
+
+    //$intervalo = $saida->diff($entrada);
+
+    //echo $intervalo->format('%R%i');
 
     //$interval = date_diff($saida, $entrada);
 
