@@ -69,6 +69,24 @@ class Movimento{
 		}		
 	}
 
+	public function close(){
+		$sql = new Sql();
+
+		// Calcula o tempo de permanencia
+		$result = $sql->select("SELECT round((time_to_sec(now() - entrada) / 60), 0) as tempo FROM movimento where movimento_id = $this->id");
+		$tempo = $result[0]["tempo"];
+
+		// Encontra o valor
+		$result2 = $sql->select("SELECT valor FROM preco where minutos <= $tempo order by valor desc limit 1");
+		$preco = $result2[0]["valor"];
+
+		// Atualiza os dados
+		$sql->query("UPDATE movimento SET saida=now(), valor=:PRECO, status=2  WHERE movimento_id = :ID", array(
+			':ID' => $this->id,
+			':PRECO' => $preco
+		));
+	}
+
 	// Exclui logicamente o registro
 	public function delete(){
 		$sql = new Sql();

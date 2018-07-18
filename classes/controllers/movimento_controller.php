@@ -23,17 +23,11 @@ if (isset($_POST["btnGravar"])){
 //tentando fazer a saida com um novo botão pois no codigo acima nao funcionou
 if(isset($_POST["btnGravarSaida"])){
 
-    $movimento = new Movimento();
-    $movimento->status = 2;
-    $movimento->saida = date ('Y-m-d H:i');
-    $date  = date_create($_POST["txtHoraEntrada"]);
-    $date1 = date_format($date, 'Y-m-d H:i:s');
-    $date2 = ($movimento->saida);
-    //echo $date1 . "<br>";
-    //echo $date2;
-    $diferenca=$date2->diff($date1);
-    print_r($diferenca);
+    $movimento = new Movimento($_POST["txtId"]);
+
+    $movimento->close();
     
+    include_once ("../views/movimento_entrada.php");
 }
 
 if (isset($_GET["action"])){
